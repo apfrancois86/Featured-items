@@ -1,0 +1,68 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+/* End for testing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+div {
+  background-color: red;
+}
+.leftContent {
+  width: 68%;
+  height: 100vh;
+  margin-right: 2%;
+  float: left;
+}
+.rightTop {
+  height: 49vh;
+  margin-bottom: 1vh;
+  width: 30%;
+  float: left;
+}
+.rightBottom {
+  height: 49vh;
+  width: 30%;
+  float: left;
+  margin-top: 1vh
+}
+
+@media screen and (max-width: 750px) {
+  .leftContent {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 2vh;
+  }
+  .rightTop {
+    height: 38vh;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .rightBottom {
+    height: 38vh;
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .leftContent {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 2vh;
+  }
+  .rightTop {
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+  .rightBottom {
+    height: 25vh;
+    width: 100%;
+  }
+}
