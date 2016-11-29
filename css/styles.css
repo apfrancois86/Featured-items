@@ -1,11 +1,4 @@
-/* For testing only */
 
-*:not(body):not(html) {
-  box-sizing:border-box;
-  border:1px dashed #000;
-}
-
-/* End for testing */
 * {
   margin: 0;
   padding: 0;
@@ -14,55 +7,61 @@
 div {
   background-color: red;
 }
-.leftContent {
-  width: 68%;
-  height: 100vh;
-  margin-right: 2%;
-  float: left;
+.topNav {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 2vh;
 }
-.rightTop {
-  height: 49vh;
-  margin-bottom: 1vh;
-  width: 30%;
+.image {
+  height: 30vh;
+  margin: 2vh 2%;
+  width: 26%;
   float: left;
-}
-.rightBottom {
-  height: 49vh;
-  width: 30%;
-  float: left;
-  margin-top: 1vh
 }
 
-@media screen and (max-width: 750px) {
-  .leftContent {
-    width: 100%;
-    height: 60vh;
-    margin-bottom: 2vh;
+body div:nth-child(3n + 2) {
+  margin-left: 7%;
+}
+
+body div:nth-child(5) {
+  margin-right: 2%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .topNav {
+    height: 10vh;
   }
-  .rightTop {
-    height: 38vh;
-    width: 49%;
-    margin-right: 2%;
+  .image {
+    height: 40vh;
+    width: 42%;
+    margin-right: 2vh 2%;
   }
-  .rightBottom {
-    height: 38vh;
-    width: 49%;
+  body div:nth-child(2n + 2) {
+    margin-left: 7%;
+  }
+
+  body div:nth-child(2n + 3) {
+    margin-right: 7%;
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .leftContent {
-    width: 100%;
-    height: 60vh;
-    margin-bottom: 2vh;
+  .topNav {
+    height: 10vh;
   }
-  .rightTop {
-    height: 25vh;
-    width: 100%;
-    margin-bottom: 2vh;
+  .image {
+    height: 40vh;
+    width: 80%;
+    margin-right: 2vh 10%;
   }
-  .rightBottom {
-    height: 25vh;
-    width: 100%;
+  body div:nth-child(2n + 2) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  body div:nth-child(2n + 3) {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
